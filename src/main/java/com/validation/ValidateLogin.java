@@ -88,9 +88,9 @@ public class ValidateLogin {
 		webElement.click();
 
 		// input username
-		driver.findElement(By.xpath("//*[@id=\"field-username\"]")).sendKeys(prop.getProperty("invalidformatusername"));
+		driver.findElement(By.id("field-username")).sendKeys(prop.getProperty("invalidformatusername"));
 		// input password
-		driver.findElement(By.xpath("//*[@id=\"field-password\"]")).sendKeys(prop.getProperty("invalidformatpwd"));
+		driver.findElement(By.id("field-password")).sendKeys(prop.getProperty("invalidformatpwd"));
 		// click on login button
 		driver.findElement(
 				By.xpath("//*[@id=\"app-main\"]/div/div/div[1]/div/main/div/div/div/form/fieldset/ol/li[4]/button"))
@@ -121,7 +121,7 @@ public class ValidateLogin {
 		driver.navigate().to(baseUrl);
 		WebElement webElement = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/header/div/span/a[1]"));
 		webElement.click();
-		driver.findElement(By.xpath("//*[@id=\"field-username\"]")).sendKeys(prop.getProperty("invalidformatusername"));
+		driver.findElement(By.id("field-username")).sendKeys(prop.getProperty("invalidformatusername"));
 		driver.findElement(
 				By.xpath("//*[@id=\"app-main\"]/div/div/div[1]/div/main/div/div/div/form/fieldset/ol/li[4]/button"))
 				.click();
@@ -145,8 +145,8 @@ public class ValidateLogin {
 		driver.navigate().to(baseUrl);
 		WebElement webElement = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/header/div/span/a[1]"));
 		webElement.click();
-		driver.findElement(By.xpath("//*[@id=\"field-username\"]")).sendKeys(prop.getProperty("invalidcredusername"));
-		driver.findElement(By.xpath("//*[@id=\"field-password\"]")).sendKeys(prop.getProperty("invalidcredpwd"));
+		driver.findElement(By.id("field-username")).sendKeys(prop.getProperty("invalidcredusername"));
+		driver.findElement(By.id("field-password")).sendKeys(prop.getProperty("invalidcredpwd"));
 		driver.findElement(
 				By.xpath("//*[@id=\"app-main\"]/div/div/div[1]/div/main/div/div/div/form/fieldset/ol/li[4]/button"))
 				.click();
@@ -170,8 +170,8 @@ public class ValidateLogin {
 		driver.navigate().to(baseUrl);
 		WebElement webElement = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/header/div/span/a[1]"));
 		webElement.click();
-		driver.findElement(By.xpath("//*[@id=\"field-username\"]")).sendKeys(prop.getProperty("invalidcredusername"));
-		driver.findElement(By.xpath("//*[@id=\"field-password\"]")).sendKeys(prop.getProperty("invalidlengthpwd"));
+		driver.findElement(By.id("field-username")).sendKeys(prop.getProperty("invalidcredusername"));
+		driver.findElement(By.id("field-password")).sendKeys(prop.getProperty("invalidlengthpwd"));
 		driver.findElement(
 				By.xpath("//*[@id=\"app-main\"]/div/div/div[1]/div/main/div/div/div/form/fieldset/ol/li[4]/button"))
 				.click();

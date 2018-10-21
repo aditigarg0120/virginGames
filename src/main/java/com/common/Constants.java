@@ -1,7 +1,7 @@
 package com.common;
 
 /*
- * This Class will Store the Constants accros the Project
+ * This Class will Store the Constants across the Project
  * @version-0.1
  * @author-Aditi
  */
